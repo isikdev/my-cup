@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Конструктор стаканов - MyCups</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+
+
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;display=swap">
+
+    <link href="css/page_745663992512a3e9203971602bcbb8ee_v1.css" type="text/css" rel="stylesheet">
+    <link href="css/template_064bdb8bdc2b78c9c911dbf87eb032be_v1.css" type="text/css" data-template-style="true"
+        rel="stylesheet">
+
+    <script async src="js/tag.js"></script>
+    <script type="text/javascript" async src="js/leadback.js"></script>
+    <script async src="https://bitrix.formacia.ru/upload/crm/site_button/loader_3_joezb3.js?27970241"></script>
+    <script async id="mango-js" src="js/mango.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+    <script
+        type="text/javascript">window['recaptchaFreeOptions'] = { 'size': 'normal', 'theme': 'light', 'badge': 'bottomright', 'version': '', 'action': '', 'lang': 'ru', 'key': '6LdnNPMbAAAAAKrKAvwPv-LWe0X4ceXcA6kqQ2pw' };</script>
+    <script
+        type="text/javascript">"use strict"; !function (r, c) { var l = l || {}; l.form_submit; var i = r.recaptchaFreeOptions; l.loadApi = function () { if (!c.getElementById("recaptchaApi")) { var e = c.createElement("script"); e.async = !0, e.id = "recaptchaApi", e.src = "//www.google.com/recaptcha/api.js?onload=RecaptchafreeLoaded&render=explicit&hl=" + i.lang, e.onerror = function () { console.error('Failed to load "www.google.com/recaptcha/api.js"') }, c.getElementsByTagName("head")[0].appendChild(e) } return !0 }, l.loaded = function () { if (l.renderById = l.renderByIdAfterLoad, l.renderAll(), "invisible" === i.size) { c.addEventListener("submit", function (e) { if (e.target && "FORM" === e.target.tagName) { var t = e.target.querySelector("div.g-recaptcha").getAttribute("data-widget"); grecaptcha.execute(t), l.form_submit = e.target, e.preventDefault() } }, !1); for (var e = c.querySelectorAll(".grecaptcha-badge"), t = 1; t < e.length; t++)e[t].style.display = "none" } r.jQuery && jQuery(c).ajaxComplete(function () { l.reset() }), void 0 !== r.BX.addCustomEvent && r.BX.addCustomEvent("onAjaxSuccess", function () { l.reset() }) }, l.renderAll = function () { for (var e = c.querySelectorAll("div.g-recaptcha"), t = 0; t < e.length; t++)e[t].hasAttribute("data-widget") || l.renderById(e[t].getAttribute("id")) }, l.renderByIdAfterLoad = function (e) { var t = c.getElementById(e), a = grecaptcha.render(t, { sitekey: t.hasAttribute("data-sitekey") ? t.getAttribute("data-sitekey") : i.key, theme: t.hasAttribute("data-theme") ? t.getAttribute("data-theme") : i.theme, size: t.hasAttribute("data-size") ? t.getAttribute("data-size") : i.size, callback: t.hasAttribute("data-callback") ? t.getAttribute("data-callback") : i.callback, badge: t.hasAttribute("data-badge") ? t.getAttribute("data-badge") : i.badge }); t.setAttribute("data-widget", a) }, l.reset = function () { l.renderAll(); for (var e = c.querySelectorAll("div.g-recaptcha[data-widget]"), t = 0; t < e.length; t++) { var a = e[t].getAttribute("data-widget"); r.grecaptcha && grecaptcha.reset(a) } }, l.submitForm = function (e) { if (void 0 !== l.form_submit) { var t = c.createElement("INPUT"); t.setAttribute("type", "hidden"), t.name = "g-recaptcha-response", t.value = e, l.form_submit.appendChild(t); for (var a = l.form_submit.elements, r = 0; r < a.length; r++)if ("submit" === a[r].getAttribute("type")) { var i = c.createElement("INPUT"); i.setAttribute("type", "hidden"), i.name = a[r].name, i.value = a[r].value, l.form_submit.appendChild(i) } c.createElement("form").submit.call(l.form_submit) } }, l.throttle = function (a, r, i) { var n, d, c, l = null, o = 0; i = i || {}; function u() { o = !1 === i.leading ? 0 : (new Date).getTime(), l = null, c = a.apply(n, d), l || (n = d = null) } return function () { var e = (new Date).getTime(); o || !1 !== i.leading || (o = e); var t = r - (e - o); return n = this, d = arguments, t <= 0 || r < t ? (l && (clearTimeout(l), l = null), o = e, c = a.apply(n, d), l || (n = d = null)) : l || !1 === i.trailing || (l = setTimeout(u, t)), c } }, l.replaceCaptchaBx = function () { var e = c.body.querySelectorAll("form img"); l.renderAll(); for (var t = 0; t < e.length; t++) { var a = e[t]; if (/\/bitrix\/tools\/captcha\.php\?(captcha_code|captcha_sid)=[0-9a-z]+/i.test(a.src) && (a.src = "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==", a.removeAttribute("width"), a.removeAttribute("height"), a.style.display = "none", !a.parentNode.querySelector(".g-recaptcha"))) { var r = "d_recaptcha_" + Math.floor(16777215 * Math.random()).toString(16), i = c.createElement("div"); i.id = r, i.className = "g-recaptcha", a.parentNode.appendChild(i), l.renderById(r) } } var n = c.querySelectorAll('form input[name="captcha_word"]'); for (t = 0; t < n.length; t++) { var d = n[t]; "none" !== d.style.display && (d.style.display = "none"), d.value = "" } }, l.init = function () { l.renderById = l.loadApi, c.addEventListener("DOMContentLoaded", function () { l.renderAll(), l.replaceCaptchaBx(); var t = l.throttle(l.replaceCaptchaBx, 200), e = r.MutationObserver || r.WebKitMutationObserver || r.MozMutationObserver; e ? new e(function (e) { e.forEach(function (e) { "childList" === e.type && 0 < e.addedNodes.length && "IFRAME" !== e.addedNodes[0].tagName && t() }) }).observe(c.body, { attributes: !1, characterData: !1, childList: !0, subtree: !0, attributeOldValue: !1, characterDataOldValue: !1 }) : c.addEventListener("DOMNodeInserted", function (e) { t() }) }) }, l.init(), r.Recaptchafree = l, r.RecaptchafreeLoaded = l.loaded, r.RecaptchafreeSubmitForm = l.submitForm }(window, document);</script>
+
+    <style>
+        .ajax_loader {
+            display: none;
+        }
+
+        .ajax_overlay {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="page page--mc">
+
+        <script src="js/three.min.js"></script>
+        <script src="js/imageResizer.min.js"></script>
+        <script src="js/cropper.min.js"></script>
+        <script src="js/cup.min.js"></script>
+
+        <script src="js/7d163cdd3a.js" crossorigin="anonymous"></script>
+        <!-- Page title -->
+        <section class="section section-sm text-center">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col">
+                        <h3>Конструктор стаканов</h3>
+                        <h5 class="mt-3">Альфа версия просмотрено у сайта: https://mycups.ru/konstruktor-stakanov/</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promos-->
+        <section class="section mb-5 text-center">
+            <div class="container">
+                <div class="row row-30">
+                    <div class="col-12">
+
+                        <!-- Promo Classic-->
+                        <article class="promo-classic">
+                            <div class="promo-classic__inner">
+                                <div class="grey-bodered-block">
+
+                                    <!-- Constructor-->
+
+                                    <div class="row cup-generator">
+
+                                        <div class="text-center" style="    display: flex;
+                                        width: 100%;
+                                        justify-content: center;">
+
+                                            <div class="row step mt-0" id="cup-upload" style="width: 100%; display: flex; justify-content: center; margin: 0 auto;">
+
+                                                <div class="">
+                                                    <div class="text-center">
+                                                        <p>Максимальный размер:
+                                                            10 МБ </p>
+                                                        <p><span style="background-color: blue !important;" class="button button-primary btn-file">Выбрать файл
+                                                                <input type="file" name="image"
+                                                                    id="upload-image"></span></p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row step mt-0" id="cup-cropper">
+
+                                            <div class="col-12 col-sm-8 text-center float-left">
+                                                <div class="image_container">
+                                                    <img id="uploaded-image" src="#" alt="Ваше изображение">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-12 col-sm-4 text-center float-right">
+
+                                                <div class="flex-row jc-center jc-md-between">
+                                                    <button id="zoom-in" type="button" class="btn btn-lg btn-primary"
+                                                        title="Увеличить">
+                                                        <span class="fa fa-search-plus"></span>
+                                                    </button>
+                                                    <button id="zoom-out" type="button" class="btn btn-lg btn-primary"
+                                                        title="Уменьшить">
+                                                        <span class="fa fa-search-minus"></span>
+                                                    </button>
+                                                    <button id="rotate-left" type="button"
+                                                        class="btn btn-lg btn-primary" title="Повернуть влево">
+                                                        <span class="fa fa-rotate-left"></span>
+                                                    </button>
+                                                    <button id="rotate-right" type="button"
+                                                        class="btn btn-lg btn-primary" title="Повернуть вправо">
+                                                        <span class="fa fa-rotate-right"></span>
+                                                    </button>
+                                                </div>
+
+                                                <p class="mt-4 mb-3"><b>Размещение логотипа</b></p>
+                                                <div class="crop-tabs flex-row">
+                                                    <a class="crop-tab is-active" href="#crop-tab-1">С одной
+                                                        стороны</a>
+                                                    <a class="crop-tab" href="#crop-tab-2">С двух сторон</a>
+                                                </div>
+
+                                                <div class="crop-preview is-active" id="crop-tab-1" data-repeat="1">
+                                                    <div class="crop-preview-box">
+                                                        <canvas class="crop-preview-cv" id="cvf" width="600"
+                                                            height="600"></canvas>
+                                                        <img class="crop-preview-layer" src="fonts/cup-layer.svg" alt>
+                                                    </div>
+                                                </div>
+
+                                                <div class="crop-preview" id="crop-tab-2" data-repeat="2">
+                                                    <div class="crop-preview-box">
+                                                        <canvas class="crop-preview-cv" id="cvh" width="600"
+                                                            height="600"></canvas>
+                                                        <img class="crop-preview-layer" src="fonts/cup-layer.svg" alt>
+                                                    </div>
+                                                    <div class="text-left crop-preview-controls">
+                                                        <div class="crop-control">
+                                                            <label class="crop-control-label">
+                                                                <input class="crop-control-input" type="radio"
+                                                                    name="crop-control" value="save-ratio" checked>
+                                                                <span class="crop-control-radio"></span>
+                                                                <span>Сохранить пропорции</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="crop-control">
+                                                            <label class="crop-control-label">
+                                                                <input class="crop-control-input" type="radio"
+                                                                    name="crop-control" value="cut-image">
+                                                                <span class="crop-control-radio"></span>
+                                                                <span>Растянуть по высоте</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div id="cropped_result" style="margin-top: 30px;">
+                                                    <button id="crop_button" class="button button-primary">Создать
+                                                        стакан</button>
+                                                </div>
+
+                                                <div>
+                                                    <button class="btn btn-lg btn-link back col-xs-12"
+                                                        data-step="cup-upload">Назад</button>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row step mt-0" id="cup-player">
+                                            <div class="col-12 col-sm-3 float-left cup-preview">
+                                                <div class="row">
+                                                    <div class="cup-prev col-6 col-sm-12" data-cup="1"><img id="pCup1"
+                                                            src></div>
+                                                    <div class="cup-prev col-6 col-sm-12" data-cup="2"><img id="pCup2"
+                                                            src></div>
+                                                    <div class="cup-prev col-6 col-sm-12" data-cup="3"><img id="pCup3"
+                                                            src></div>
+                                                    <div class="cup-prev col-6 col-sm-12" data-cup="4"><img id="pCup4"
+                                                            src></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-9 float-right">
+                                                <div id="userCup"></div>
+                                                <div class="col-12 text-center mt-3">
+                                                    <button id="rotateLeft" class="btn btn-lg btn-primary">
+                                                        <span class="fa fa-angle-double-left"></span>
+                                                    </button>
+                                                    <button id="rotateStop" class="btn btn-lg btn-primary">
+                                                        <span class="fa fa-pause"></span>
+                                                    </button>
+                                                    <button id="rotateStart" class="btn btn-lg btn-primary">
+                                                        <span class="fa fa-play"></span>
+                                                    </button>
+                                                    <button id="rotateRight" class="btn btn-lg btn-primary">
+                                                        <span class="fa fa-angle-double-right"></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="row step mt-0" id="cup-sender">
+                                            <div class="col-12">
+                                                <div class="row">
+                                                    <div class="col-6 col-sm-3">
+                                                        <div class="cup-prev"><img id="rCup1" src></div>
+                                                    </div>
+                                                    <div class="col-6 col-sm-3">
+                                                        <div class="cup-prev"><img id="rCup2" src></div>
+                                                    </div>
+                                                    <div class="col-6 col-sm-3">
+                                                        <div class="cup-prev"><img id="rCup3" src></div>
+                                                    </div>
+                                                    <div class="col-6 col-sm-3">
+                                                        <div class="cup-prev"><img id="rCup4" src></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-center mt-2">
+                                                    <div class="col-12" id="success-block">
+                                                        <div class="alert alert-success">
+                                                            Спасибо! Сформированные изображения отправлены на
+                                                            указанный Вами email-адрес.<br><br>
+                                                            <button class="button button-primary"
+                                                                onclick="window.location.reload();">Создать новый
+                                                                дизайн</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12" id="error-block">
+                                                        <div class="alert alert-error"></div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-10 col-md-6 col-lg-5" id="form-block">
+                                                        <form>
+                                                            <br>
+                                                            <input type="text" name="name"
+                                                                class="form-control form-control-lg col"
+                                                                placeholder="Вашe имя" required><br>
+                                                            <input type="email" name="mail"
+                                                                class="form-control form-control-lg col"
+                                                                placeholder="Ваш Email-адрес" required><br>
+                                                            <input type="text" name="phone"
+                                                                class="form-control form-control-lg col"
+                                                                placeholder="Телефон для связи">
+                                                            <button id="sendImages"
+                                                                class="button button-primary">Получить фото на
+                                                                почту</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- //Constructor-->
+
+                            </div>
+                    </div>
+                    </article>
+
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    </div>
+
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+
+    <!-- Javascript-->
+    <script type="text/javascript" src="js/template_f7e43b45ff22e62aab91d51c6270cfda_v1.js"></script>
+
+
+    <!-- Calltracking -->
+    <script>
+        (function (w, d, u, i, o, s, p) {
+            if (d.getElementById(i)) { return; } w['MangoObject'] = o;
+            w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) }; w[o].u = u; w[o].t = 1 * new Date();
+            s = d.createElement('script'); s.async = 1; s.id = i; s.src = u;
+            p = d.getElementsByTagName('script')[0]; p.parentNode.insertBefore(s, p);
+        }(window, document, '//widgets.mango-office.ru/widgets/mango.js', 'mango-js', 'mgo'));
+        mgo({ calltracking: { id: 26025, elements: [{ "selector": ".ctphone" }] } });
+    </script>
+
+    <!-- Marquiz script start -->
+    <script src="js/v1.js" type="application/javascript"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            Marquiz.init({
+                id: '5d9c8f516b84c800443d4401',
+                autoOpen: false,
+                autoOpenFreq: 'once',
+                openOnExit: false
+            });
+
+            Marquiz.addParam('mycups_utm_source', getCookie('MYCUPS_UTM_SOURCE'));
+            Marquiz.addParam('mycups_utm_medium', getCookie('MYCUPS_UTM_MEDIUM'));
+            Marquiz.addParam('mycups_utm_campaign', getCookie('MYCUPS_UTM_CAMPAIGN'));
+            Marquiz.addParam('mycups_utm_content', getCookie('MYCUPS_UTM_CONTENT'));
+            Marquiz.addParam('mycups_utm_term', getCookie('MYCUPS_UTM_TERM'));
+        });
+    </script>
+    <!-- Marquiz script end -->
+
+    <!-- Открытая линия MyCups -->
+    <script>
+        (function (w, d, u) {
+            var s = d.createElement('script'); s.async = true; s.src = u + '?' + (Date.now() / 60000 | 0);
+            var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h);
+        })(window, document, 'https://bitrix.formacia.ru/upload/crm/site_button/loader_3_joezb3.js');
+    </script>
+
+    <!-- Begin LeadBack code {literal} -->
+    <script>
+        var _emv = _emv || [];
+        _emv['campaign'] = '9455dcfda0fa354b34871ca5';
+
+        (function () {
+            var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+            em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+        })();
+    </script>
+    <!-- End LeadBack code {/literal} -->
+
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(52157521, "init", {
+            clickmap: true,
+            webvisor: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/52157521" style="position:absolute; left:-9999px;" alt></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26255287-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-26255287-2');
+    </script>
+
+
+
+
+</body>
+
+</html>
